@@ -1,0 +1,349 @@
+	
+/*
+Author: Joshua Teubner
+Date: 10/4/2024
+File Name: style.CSS
+*/
+
+/*CSS Reset*/
+body,header,nav,main,footer,h1,div,img,ul,{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/*Header Style Rules*/
+header {
+	color: #fff;
+	background-color: #4863A0;
+	padding: 0;
+	left: 0;
+	padding-top: 0.25em;
+	padding-bottom: 2%;
+	font-size: 2em;
+	margin-top: 1%;
+}
+
+header img {
+	height: 25%;
+	width: 25%;
+	display: block;
+	margin: 0 auto;
+}
+
+/*Body Style Rules*/
+
+img {
+	max-width: 25%;
+	display: block;
+}
+
+
+.build {
+	background-color: #4863A0;
+	color: #fff;
+	text-align: center;
+	padding-top: 0.25%;
+	padding-bottom: 21%;
+}
+
+.about {
+	background-color: #4863A0;
+	color: #fff;
+	text-align: center;
+	padding-top: 0.25%;
+	padding-bottom: 9%;
+}
+
+.index {
+	background-color: #4863A0;
+	color: #fff;
+	text-align: center;
+	padding-top: 0.25%;
+	padding-bottom: 2%;
+}
+
+.contact {
+	background-color: #4863A0;
+	color: #fff;
+	text-align: center;
+	padding-top: 0.25%;
+	padding-bottom: 5%;
+}
+
+body {
+	background: rgb(36,0,22);
+	background: linear-gradient(90deg, rgba(36,0,22,1) 0%, rgba(121,14,9,1) 35%, rgba(9,75,121,1) 100%);
+}
+
+info title {
+	text-align: center;
+}
+
+email {
+	color: #fff;
+}
+
+div {
+	color: #fff;
+}
+
+info title {
+	text-align: center;
+}
+
+iframe {
+	width: 500px;
+    height: 500px;
+    margin: 0 auto;
+	border: 5px solid #000;
+}
+
+/*Footer Style Rules*/
+
+footer .copyright {
+	font-size: 0.75em;
+	text-align: center;
+	color: #fff;
+	padding: 2% 4%;
+	float: left;
+	width: 100%;
+	background-color: #000;
+	clear: left;
+}
+
+.foot {
+	color: #fff;
+	text-align: right;
+	float: left;
+	clear: bottom;
+}
+
+.social {
+	float: left;
+}
+
+.headimg {
+	float: right;
+	clear: left;
+	padding-right: 3%;
+}
+
+about {
+	text-align: center;
+	clear: left;
+	list-style-type: none;
+	border-collapse: collapse;
+	width: 75%;
+}
+
+/* Style Rules for Tables */
+table {
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 2em;
+	border:1px solid #000;
+}
+
+caption {
+		font-size: 2em;
+		font-weight: bold;
+		padding: 1.5%;
+	}
+	
+	th, td {
+		border:1px solid #000;
+		padding: 1.5%;
+	}
+	
+	th {
+		background-color: #000;
+		color: #fff;
+		font-size: 1.15em;
+	}
+	
+	tr:nth-child(odd) {
+		background-color: #ccc;
+		color: #000;
+	}
+	
+/* Style Rules for form */
+legend {
+	font-size: 1.5em;
+}
+
+form {
+	margin: 0 auto;
+	width: 65%;
+}
+
+/* Media Query for Mobile Viewport */
+@media screen and (min-width: 320px) {
+		
+		.tablet-desktop {
+			display: none;
+		}
+		
+		.mobile {
+			display: block;
+		}
+		
+		th {
+			font-size: 0.75em;
+		}
+		
+		.mobile {
+			text-align: center;
+			list-style-type: none;
+		}
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px) {
+	
+		/*Tablet Viewport: Show tablet-desktop class, hide mobile class */
+		
+		.tablet-desktop {
+			display: block;
+		}
+		
+		.mobile, .mobile-nav {
+		display:none;
+		}
+		
+		/* Tablet Viewport: Style rules for nav area */
+		nav li {
+			display: inline-block;
+		}
+		
+		nav ul {
+			text-align: center;
+		}
+		/* Tablet Viewport: Style rules for main content area */
+		main ul {
+			margin: 0 0 1% 2%;
+		}
+		
+		
+		.round {
+			border-radius:8px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 50%;
+		}
+		
+		.title {
+			font-size: 1.75em
+		}
+		
+		.para {
+			font-size: 0.75em;
+			font-weight: bold;
+		}
+		
+		.form-grid {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-gap: 20px;
+		}
+	
+		.btn {
+		grid-column: 1 / span 3;
+		}
+		
+		.grid {
+			float: left;
+			width: 50;
+		}
+		
+		#prebuilt, #personal {
+		width: 29%;
+		float: left;
+		margin: 0 2%;
+		padding-left: 13%;
+		}
+		
+		#about {
+		float: left;
+		}
+		
+		#about {
+		border-top: 1px solid #fff;
+		border-bottom: 2px solid #fff;
+		background-color: #4863A0;
+		padding: 0.5% 2%;
+		width: 100%;
+	}
+		
+		table {
+			width: 75%;
+		}
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1015px), print {
+	.tablet-desktop {
+		display: block;
+	}
+		
+	.mobile, .mobile-nav {
+		display:none;
+		}
+		
+	nav li a:hover {
+		color: #000;
+		background-color: #fff;
+		transform: scale(1.3);
+	}
+	#prebuilt, #personal {
+		width: 29%;
+		float: left;
+		margin: 0 2%;
+	}
+	
+	/*Nav Style Rules*/
+
+	nav {
+		list-style-type: none;
+		padding: 2%;
+	}
+
+	nav ul {
+		list-style-type: none;
+		text-align: center;
+		background-color: #4863A0;
+		padding-top: 2%;
+		padding-bottom: 2%;
+		padding-left: 0.75em;
+		padding-right: 0.75em;
+	}
+
+	nav li {
+		display: inline-block;
+		border-top: none;
+		border-right: 1px solid #000;
+		border-left: 1px solid #000
+	}
+}
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width:1921px), print {
+	
+	.tablet-desktop {
+			display: block;
+		}
+		
+		.mobile, .mobile-nav {
+		display:none;
+		}
+}
+
+/* Media Query for Print */
+@media print {
+	
+	body {
+		background-color: #fff;
+		color: #000;
+	}
+}
